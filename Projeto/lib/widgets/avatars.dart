@@ -8,7 +8,37 @@ class Avatars extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+        // Título e Botão Filtrar
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16.0),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              const Text(
+                'Pessoas Encontradas',
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.blue,
+                ),
+              ),
+              InkWell(
+                onTap: () {},
+                child: Column(
+                  children: const [
+                    Icon(Icons.filter_alt, color: Colors.blue, size: 20),
+                    Text(
+                      'Filtrar',
+                      style: TextStyle(color: Colors.blue, fontSize: 11),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
         const SizedBox(height: 12),
+        // Lista horizontal de avatares
         SizedBox(
           height: 70,
           child: ListView.builder(

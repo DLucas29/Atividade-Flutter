@@ -28,7 +28,7 @@ class MainPage extends StatelessWidget {
             const Images(),
 
             // 2. Botões de Ação (Quero Ir, Já Fui, etc.)
-            const Actions(),
+            const Acoes(),
 
             // 3. Texto Descritivo (Lorem Ipsum)
             const Padding(
